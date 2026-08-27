@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e24" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FC4C02" />
+      <stop offset="100%" stop-color="#FF7738" />
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#FC4C02" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Card -->
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="url(#bgGrad)" stroke="#FC4C02" stroke-opacity="0.4" stroke-width="10" />
+
+  <!-- Dumbbell Graphic -->
+  <g transform="translate(256 256) scale(1.45)" filter="url(#glow)">
+    <!-- Main Center Bar -->
+    <rect x="-65" y="-10" width="130" height="20" rx="6" fill="url(#orangeGrad)" />
+
+    <!-- Left Weight Plates -->
+    <rect x="-75" y="-45" width="20" height="90" rx="8" fill="url(#orangeGrad)" />
+    <rect x="-95" y="-35" width="16" height="70" rx="6" fill="url(#orangeGrad)" />
+
+    <!-- Right Weight Plates -->
+    <rect x="55" y="-45" width="20" height="90" rx="8" fill="url(#orangeGrad)" />
+    <rect x="79" y="-35" width="16" height="70" rx="6" fill="url(#orangeGrad)" />
+  </g>
+</svg>

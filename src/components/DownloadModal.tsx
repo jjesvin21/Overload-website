@@ -9,7 +9,7 @@ interface DownloadModalProps {
 export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const apkUrl = "https://github.com/jjesvin21/Overload/releases/download/v1.0.0/app-release.apk";
+  const apkUrl = "https://github.com/jjesvin21/Overload/releases/download/v1.0.0/overload_v_1.1.0.apk";
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-lg animate-fadeIn">
@@ -38,7 +38,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose })
         <div className="p-6 rounded-2xl bg-zinc-950 border border-white/10 space-y-5">
           <div className="space-y-2">
             <div className="font-mono text-xs text-[#2DCC71] font-bold uppercase">
-              Android APK (v1.0.0 Direct Download)
+              Android APK (v1.1.0 Direct Download)
             </div>
             <p className="text-xs text-zinc-300 leading-relaxed font-normal">
               Download the standalone signed APK file directly. Instant installation, zero subscriptions, 100% local privacy model.
@@ -51,7 +51,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose })
             rel="noopener noreferrer"
             className="w-full py-4 rounded-xl bg-[#FC4C02] hover:bg-[#e04300] text-black font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer transition-all shadow-lg shadow-[#FC4C02]/25 hover:scale-[1.02] active:scale-[0.98]"
           >
-            <Download className="w-4 h-4" /> Download Official APK (v1.0.0)
+            <Download className="w-4 h-4" /> Download Official APK (v1.1.0)
           </a>
         </div>
       </div>

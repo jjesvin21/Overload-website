@@ -51,6 +51,15 @@
   box-shadow: 0 0 40px rgba(252, 76, 2, 0.15);
 }
 
+.glass-card-cyan {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.08) 0%, rgba(18, 18, 18, 0.85) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-top: 1px solid rgba(0, 240, 255, 0.5);
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.12);
+}
+
 .glass-nav {
   background: rgba(19, 19, 19, 0.65);
   backdrop-filter: blur(24px);
@@ -62,8 +71,16 @@
   text-shadow: 0 0 20px rgba(252, 76, 2, 0.6);
 }
 
+.text-glow-cyan {
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+}
+
 .box-glow-orange {
   box-shadow: 0 0 30px rgba(252, 76, 2, 0.3);
+}
+
+.box-glow-cyan {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.25);
 }
 
 .box-glow-gold {
@@ -110,14 +127,16 @@
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #080808;
+  background: rgba(8, 8, 8, 0.6);
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb {
   background: #2a2a2a;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #FC4C02;
+  background: #00F0FF;
 }

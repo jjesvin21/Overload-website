@@ -51,6 +51,11 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center gap-8 font-mono text-xs text-zinc-300 uppercase tracking-widest">
+          <a href="#mcp-docs" className="text-[#00F0FF] hover:text-white transition-colors relative py-1 group flex items-center gap-1.5 font-bold">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00F0FF] animate-ping" />
+            MCP Server (AI)
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00F0FF] group-hover:w-full transition-all duration-300" />
+          </a>
           <a href="#features" className="hover:text-[#FC4C02] transition-colors relative py-1 group">
             Features
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FC4C02] group-hover:w-full transition-all duration-300" />
@@ -103,6 +108,13 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-x-0 top-[73px] bg-[#0c0c0c]/95 backdrop-blur-2xl border-b border-white/10 p-6 flex flex-col gap-5 shadow-2xl animate-fadeIn">
+          <a
+            href="#mcp-docs"
+            onClick={() => setMobileMenuOpen(false)}
+            className="font-mono text-sm uppercase text-[#00F0FF] hover:text-white font-bold flex items-center gap-2"
+          >
+            ⚡ MCP Server (AI Agent Integration)
+          </a>
           <a
             href="#features"
             onClick={() => setMobileMenuOpen(false)}

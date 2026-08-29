@@ -21,17 +21,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDownload }) => {
       <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Left Column: Text & CTAs */}
         <div className="lg:col-span-7 space-y-8 text-left">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-zinc-900/80 border border-white/10 backdrop-blur-xl shadow-lg">
+          {/* Announcement Badge */}
+          <a
+            href="#mcp-docs"
+            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/90 border border-[#00F0FF]/40 backdrop-blur-xl shadow-lg hover:border-[#00F0FF] transition-all group cursor-pointer box-glow-cyan"
+          >
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FC4C02] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#FC4C02]" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00F0FF] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00F0FF]" />
             </span>
-            <span className="font-mono text-xs text-zinc-300 tracking-wider uppercase flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-[#FC4C02]" />
-              NOW IN BETA • LIQUID GLASS ENGINE
+            <span className="font-mono text-xs text-white tracking-wider uppercase flex items-center gap-1.5 font-bold">
+              <Sparkles className="w-3.5 h-3.5 text-[#00F0FF]" />
+              ⚡ NEW: Connect Overload to your AI Agent via MCP
             </span>
-          </div>
+            <ArrowRight className="w-3.5 h-3.5 text-[#00F0FF] group-hover:translate-x-1 transition-transform" />
+          </a>
 
           {/* Main Title */}
           <div className="space-y-2">
@@ -46,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDownload }) => {
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-zinc-400 font-normal max-w-xl leading-relaxed">
-            High-performance workout tracking built for absolute athletic focus. Zero distractions, total local device privacy, and relentless progressive overload.
+            High-performance workout tracking built for absolute athletic focus. Let AI agents analyze your history and program custom training routines directly into your phone via MCP.
           </p>
 
           {/* Action Buttons */}
@@ -58,6 +62,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDownload }) => {
               Download Android App
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
+
+            <a
+              href="#mcp-docs"
+              className="px-6 py-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-[#00F0FF]/40 text-[#00F0FF] font-extrabold font-mono text-sm uppercase tracking-wider transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer box-glow-cyan"
+            >
+              <Sparkles className="w-4 h-4" /> MCP AI DOCS
+            </a>
           </div>
 
           {/* Metric Badges */}

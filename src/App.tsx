@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { McpDocsSection } from './components/McpDocsSection';
 import { BentoFeatures } from './components/BentoFeatures';
 import { ConsistencyHeatmap } from './components/ConsistencyHeatmap';
 import { DownloadModal } from './components/DownloadModal';
@@ -24,6 +25,7 @@ export function App() {
         <Hero
           onOpenDownload={() => setDownloadOpen(true)}
         />
+        <McpDocsSection soundEnabled={soundEnabled} />
         <BentoFeatures soundEnabled={soundEnabled} />
         <ConsistencyHeatmap />
       </main>

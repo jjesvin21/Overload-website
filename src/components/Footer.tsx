@@ -49,6 +49,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDownload }) => {
         </div>
 
         <div className="flex items-center gap-6 font-mono text-xs text-zinc-400">
+          <a href="#mcp-docs" className="text-[#00F0FF] hover:text-white transition-colors">
+            MCP SERVER (AI)
+          </a>
           <a href="#features" className="hover:text-white transition-colors">
             FEATURES
           </a>
